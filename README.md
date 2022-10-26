@@ -198,6 +198,15 @@ Si deseamos que se ejecute en segundo plano podemos añadirle el parámetro ***-
 docker-compose up -d
 ```
 
+# Comprobación funcionamiento DNS
+
+Realizamos ping desde el servicio **alpine** al servicio de **bind9** para comprobar si el servicio está funcionando correctamente.
+
+
+
+_![GIF](https://i.imgur.com/wyOVivY.gif)_
+
+
 
 
 [README.md](README.md) de Noé Díaz Dos Santos para el repositorio [Practica 1 SRI](https://github.com/ndiazdossantos/practica1/)
