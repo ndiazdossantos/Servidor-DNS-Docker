@@ -1,0 +1,28 @@
+version: "3.3"
+services:
+  bind9:
+    container_name: asir_bind9
+    image: internetsystemsconsortium/bind9:9.16
+    ports:
+      - 5300:53/udp
+      - 5300:53/tcp
+    networks:
+      bind9_subnet:
+        ipv4_address: 10.1.0.254
+    volumes:
+      - /home/noe/DNS/conf:/etc/bind
+      - /home/noe/DNS/zonas:/var/lib/bind
+  asir_cliente:
+    container_name: asir_clliente
+    image: alpine
+    networks:
+      - bind9_subnet
+    stdin_open: true #docker run -i
+    tty: true #docker run -t
+    dns:
+      - 10.1.0.254 #dns a usar
+networks:
+  bind9_subnet:
+    external: true
+
+  #docker network create --subnet 10.1.0.0/24 --gateway 10.1.0.1 brind9_subnet

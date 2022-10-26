@@ -1,0 +1,7 @@
+zone "sdfadfe2.com." {
+        type master;
+        file "/var/lib/bind/db.sdfadfe2.com";
+        allow-query{
+            any;
+        };
+};'       
