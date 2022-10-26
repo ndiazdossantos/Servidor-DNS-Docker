@@ -182,4 +182,20 @@ _ES el registro de intercambio de correo, donde se asigna un nombre de dominio a
 
 _Conocido como el registro de texto, indica un mensaje que nosotros deseemos, en muchas empresas de proveedor de servicios es necesario para realizar una verificación de propiedad del dominio, por ejemplo en Google, que nos indican un TXT para poder añadir su servicio de correo aparte de sus DNS de MX para verificar que nosotros tenemos capacidad de gestión de las DNS de dicho dominio._
 
+# Levantar el servicio
+
+Para levantar el servicio debemos utilizar el comando desde la ubicación que se encuentre el archivo ```docker-compose.yml```
+
+```
+docker-compose up
+```
+
+Si deseamos que se ejecute en segundo plano podemos añadirle el parámetro ***-d*** quedando un resultado tal que así:
+
+```
+docker-compose up -d
+```
+
+
+
 [README.md](README.md) de Noé Díaz Dos Santos para el repositorio [Practica 1 SRI](https://github.com/ndiazdossantos/practica1/)
