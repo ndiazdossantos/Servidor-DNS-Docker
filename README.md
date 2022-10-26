@@ -72,6 +72,8 @@ _Para ello utilizaremos el comando:_
 
 _Posteriormente a tenerla creada ya podemos asignarle una ip concreta dentro del apartado de ***ipv4_address***, en nuestro caso 10.1.0.254_
 
+_Indicaremos los puertos TCP y UDP en este caso 5300:53 (Puerto Interno/Externo)_
+
 _También tendremos que definir los **volumes** para designar ```/etc/bind``` hacia nuestro directorio **[conf](https://github.com/ndiazdossantos/practica1/tree/master/conf)**, haciendo referencia a nuestros ficheros de configuración y ```/var/lib/bind``` hacia **[zonas](https://github.com/ndiazdossantos/practica1/tree/master/zonas)** haciendo referencia a las zonas del servidor DNS._
 
 _Posteriormente definimos el nombre del contenedor y campos básicos de configuración_
